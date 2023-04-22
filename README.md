@@ -27,6 +27,7 @@ Functie de afisare al intregii liste de iteme<br>
 Suprascrierea = pentru transferarea tuturor campurilor (si nodurilor, dar nu pare sa functioneze)
 
 Player:<br>
+Suprascrierea << pentru afisarea statsurilor complete (uitasem sa scriu)<br>
 Setarea si obtinerea HP-ului<br>
 Setarea si obtinerea (Hit) Damage-ului<br>
 Scaderea HP-ului<br>
@@ -35,6 +36,7 @@ Verificarea daca este in viata (HP)<br>
 Afisarea inventarului
 
 Mob:<br>
+Suprascrierea << pentru afisarea statsurilor complete (uitasem sa scriu)<br>
 Verificarea daca este in viata (HP)<br>
 Atacarea unui Player<br>
 Obtinerea numelui (Cow, Pig etc.)<br>
