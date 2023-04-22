@@ -10,36 +10,36 @@ Inventory in Player (fiecare player are un inventar)
 
 Functionalitati:
 
-Inventory:
-Resetarea acestuia
-Adaugarea itemelor in acesta
+Inventory:<br>
+Resetarea acestuia<br>
+Adaugarea itemelor in acesta<br>
 Suprascrierea operatorilor >>, << pentru adaugarea datelor mai convenient, fiind un vector.
 
-Items:
-Setarea si returnarea nodului urmator
-Obtinerea numelui itemelor
-Suprascrierea << pentru afisarea tuturor campurilor
+Items:<br>
+Setarea si returnarea nodului urmator<br>
+Obtinerea numelui itemelor<br>
+Suprascrierea << pentru afisarea tuturor campurilor<br>
 Suprascrierea = pentru transferarea tuturor campurilor
 
-ItemList:
-Functie de adaugare al unui nod(item) nou
-Functie de afisare al intregii liste de iteme
+ItemList:<br>
+Functie de adaugare al unui nod(item) nou<br>
+Functie de afisare al intregii liste de iteme<br>
 Suprascrierea = pentru transferarea tuturor campurilor (si nodurilor, dar nu pare sa functioneze)
 
-Player:
-Setarea si obtinerea HP-ului
-Setarea si obtinerea (Hit) Damage-ului
-Scaderea HP-ului
-Atacarea unui Mob
-Verificarea daca este in viata (HP)
+Player:<br>
+Setarea si obtinerea HP-ului<br>
+Setarea si obtinerea (Hit) Damage-ului<br>
+Scaderea HP-ului<br>
+Atacarea unui Mob<br>
+Verificarea daca este in viata (HP)<br>
 Afisarea inventarului
 
-Mob:
-Verificarea daca este in viata (HP)
-Atacarea unui Player
-Obtinerea numelui (Cow, Pig etc.)
-Obtinerea (hit) damage-ului acestuia
-Obtinerea id-ului itemului care este dropat la moarte 
+Mob:<br>
+Verificarea daca este in viata (HP)<br>
+Atacarea unui Player<br>
+Obtinerea numelui (Cow, Pig etc.)<br>
+Obtinerea (hit) damage-ului acestuia<br>
+Obtinerea id-ului itemului care este dropat la moarte <br>
 Obtinerea HP-ului
 
 Cateva functionalitati nu au reusit sa le implementez din cauza faptului ca nu imi reusea transferul listei inlantuite in interiorul claselor de player, respectiv mob, pentru a avea access ambele la inventar. Insa consider ca am indeplinit cerintele.
