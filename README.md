@@ -1,47 +1,18 @@
-# Tema1-POO
+# Bootleg Minecraft (tema poo)
+<hr>
 
 Am dezvoltat cateva functionalitati ale jocului Minecraft prin programarea orientata pe obiecte.
 
-Programul meu foloseste cinci clase: Inventory, Items + ItemList (LinkedList cu Items ca nod), Mob, Player
-
-Compunerea este realizata in urmatoarele moduri:
-Items* in ItemList (ca un nod)
-Inventory in Player (fiecare player are un inventar)
-
-Functionalitati:
-
-Inventory:<br>
-Resetarea acestuia<br>
-Adaugarea itemelor in acesta<br>
-Suprascrierea operatorilor >>, << pentru adaugarea datelor mai convenient, fiind un vector.
-
-Items:<br>
-Setarea si returnarea nodului urmator<br>
-Obtinerea numelui itemelor<br>
-Suprascrierea << pentru afisarea tuturor campurilor<br>
-Suprascrierea = pentru transferarea tuturor campurilor
-
-ItemList:<br>
-Functie de adaugare al unui nod(item) nou<br>
-Functie de afisare al intregii liste de iteme<br>
-Suprascrierea = pentru transferarea tuturor campurilor (si nodurilor, dar nu pare sa functioneze)
-
-Player:<br>
-Suprascrierea << pentru afisarea statsurilor complete (uitasem sa scriu)<br>
-Setarea si obtinerea HP-ului<br>
-Setarea si obtinerea (Hit) Damage-ului<br>
-Scaderea HP-ului<br>
-Atacarea unui Mob<br>
-Verificarea daca este in viata (HP)<br>
-Afisarea inventarului
-
-Mob:<br>
-Suprascrierea << pentru afisarea statsurilor complete (uitasem sa scriu)<br>
-Verificarea daca este in viata (HP)<br>
-Atacarea unui Player<br>
-Obtinerea numelui (Cow, Pig etc.)<br>
-Obtinerea (hit) damage-ului acestuia<br>
-Obtinerea id-ului itemului care este dropat la moarte <br>
-Obtinerea HP-ului
-
-Cateva functionalitati nu au reusit sa le implementez din cauza faptului ca nu imi reusea transferul listei inlantuite in interiorul claselor de player, respectiv mob, pentru a avea access ambele la inventar. Insa consider ca am indeplinit cerintele.
+Programul meu foloseste clasele: 
+- Items
+- ItemDB (singleton, database-ul care contine fiecare item intr-un vector de obiecte de tip Items, functia areAllType foloseste all_of prin un lambda expression)
+- Inventory (inventarul player-ului, foloseste lista de iteme pentru convenienta, mobs au doar (optional) weapon si drop item, are variabila statica pentru marimea unui inventar)
+- Entity (clasa interfata pentru clasele Mob, Player)
+- ItemDBAccess (clasa abstracta, ofera access la database claselor care o mostenesc)
+- Mob (mosteneste protected IDA, public Entity)
+- Player (mosteneste protected IDA, public Entity, are functii statice, functia loot care foloseste random pentru obtinerea unui item random)
+- Hostile si Peaceful Mob, care mostenesc clasa Mob, folosesc constructor cu parametrii pentru Mob prin lista de initializare
+<br>
+De asemenea am exceptiile custom MobException folosita pentru a identifica fie MobInvalidHP (hp negativ in construirea unei instante pentru un mob custom) sau MobUndeclaredHP (hp nedeclarat pentru un mob custom)
+<br>
+Upcastingul/Polimorfismul/DynamicCast este demonstrat in codul din main-ul programului. Probabil am omis chestii in documentatie!
