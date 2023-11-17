@@ -15,4 +15,3 @@ Programul meu foloseste clasele:
 <br>
 De asemenea am exceptiile custom MobException folosita pentru a identifica fie MobInvalidHP (hp negativ in construirea unei instante pentru un mob custom) sau MobUndeclaredHP (hp nedeclarat pentru un mob custom)
 <br>
-Upcastingul/Polimorfismul/DynamicCast este demonstrat in codul din main-ul programului. Probabil am omis chestii in documentatie!
