@@ -1,4 +1,4 @@
-# Bootleg Minecraft (tema poo)
+# Bootleg Minecraft (tema OOP)
 <hr>
 
 Am dezvoltat cateva functionalitati ale jocului Minecraft prin programarea orientata pe obiecte.
