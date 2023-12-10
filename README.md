@@ -1,7 +1,7 @@
-# Bootleg Minecraft (tema OOP)
+# Bootleg Minecraft
 <hr>
 
-Am dezvoltat cateva functionalitati ale jocului Minecraft prin programarea orientata pe obiecte.
+Am dezvoltat cateva functionalitati ale jocului Minecraft prin programarea orientata pe obiecte in C++.
 
 Programul meu foloseste clasele: 
 - Items
