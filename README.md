@@ -1,7 +1,7 @@
-# Minecraft RPG
+# Text-based RPG
 <hr>
 
-Am dezvoltat cateva functionalitati ale jocului Minecraft prin programarea orientata pe obiecte in C++, intr-o maniera RPG.
+Am dezvoltat cateva functionalitati inspirate dupa jocul Minecraft prin programarea orientata pe obiecte in C++, intr-o maniera RPG.
 
 Programul meu foloseste clasele: 
 - Items
